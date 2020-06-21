@@ -1,0 +1,247 @@
+{
+	"info": {
+		"_postman_id": "4938d0d1-43ef-4a55-a61c-159fe595f50c",
+		"name": "Turtle Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cameras",
+			"item": [
+				{
+					"name": "Add Camera",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"MesaId\": 10,\n    \"CameraId\": \"3u9s349dA\",\n    \"Address\": \"10.0.75.1\",\n    \"Port\": 554,\n    \"UserName\": \"admin\",\n    \"Password\": \"Billar365\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/cameras/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"cameras",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Camera",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"MesaId\": 10,\n    \"Address\": \"192.168.17.107\",\n    \"Port\": 554,\n    \"UserName\": \"admin2\",\n    \"Password\": \"Billar365\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/cameras/3u9s349d4",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"cameras",
+								"3u9s349d4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Camera",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"MesaId\": 10,\n    \"Address\": \"192.168.17.107\",\n    \"Port\": 554,\n    \"UserName\": \"admin2\",\n    \"Password\": \"Billar365\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/cameras/3u9s349d4",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"cameras",
+								"3u9s349d4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View Camera",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"MesaId\": 10,\n    \"Address\": \"192.168.17.107\",\n    \"Port\": 554,\n    \"UserName\": \"admin2\",\n    \"Password\": \"Billar365\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/cameras/3u9s349d4",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"cameras",
+								"3u9s349d4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List of Search Cameras",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"MesaId\": 10,\n    \"Address\": \"192.168.17.107\",\n    \"Port\": 554,\n    \"UserName\": \"admin2\",\n    \"Password\": \"Billar365\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/cameras/search",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"cameras",
+								"search"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Stream",
+			"item": [
+				{
+					"name": "Cut Media",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Id\":\"3U9S349D4\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/daemon/CutAndPlay",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"daemon",
+								"CutAndPlay"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
